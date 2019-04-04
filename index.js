@@ -5,13 +5,13 @@ const TOKEN = "853423670:AAE-4tOmBqDwqFxWYx7e3cxIFK8AsdzSD4o";
 
 const bot = new BOT_API(TOKEN, {
   polling: true,
-  request: {
-    agentClass: AGENT,
-    agentOptions: {
-      socksHost: "127.0.0.1",
-      socksPort: "9150",
-    }
-  }
+  // request: {
+  //   agentClass: AGENT,
+  //   agentOptions: {
+  //     socksHost: "127.0.0.1",
+  //     socksPort: "9150",
+  //   }
+  // }
 });
 
 bot.onText(/\/help/, (msg, match) => {
